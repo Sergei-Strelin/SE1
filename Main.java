@@ -2,26 +2,26 @@ import java.util.*;
 
 
 public class Main {
-    private    = new Scanner (System.in , "Cp866");
-    public static void main (String[] args) {
+    private static Scanner input = new Scanner(System.in, "Cp866");
+    public static void main(String[] args) {
         List<Persons> persons = Persons();
         List<Relation> relation = Relation();
         System.out.println(relationString(1, relation, persons));
         
-        
+    
         boolean stopWhile = true;
         while (stopWhile){
             System.out.println(menu());
             int whatDo = input.nextInt();
-            switch (whatDo) {
-            1 1: 
+            switch(whatDo) {
+            case 1: 
                 viewAllPerson(persons);
                 break;
-            2 2:
+            case 2:
                 System.out.println("Пока пусто");
                 viewAllRelation(relation, persons);
                 break;
-            3 3:
+            case 3:
                 stopWhile = false;
                 break;
             default:
@@ -103,7 +103,6 @@ public class Main {
 
         return  persons.get(id).getSex() ;
     }
-
 
 
     private static String menu() {
